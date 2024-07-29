@@ -8,9 +8,15 @@
 ## プロジェクトの目的
 このツールの目的は、プロセスインジェクション技術を学び、その実装方法を理解することです。また、セキュリティ研究やマルウェア解析の教育用途にも利用されることを目指しています。
 
-[インジェクター名] [プロセス名] [ファイルパス]
+## 使い方  
+<pre>
+.\[インジェクター名] [プロセス名] [ファイルパス]
+</pre>
 
-#### 例：```AsynchronousProcedureCall_ShellcodeInjection.exe Notepad.exe "C:\Code\TestShellcode\x64\Release\TestShellcode.bin"```
+#### 例：```.\AsynchronousProcedureCall_ShellcodeInjection.exe Notepad.exe "C:\Code\TestShellcode\x64\Release\TestShellcode.bin"```
 (メモ帳プロセスにTest.binをシェルコードインジェクション)
 
 ## AsynchronousProcedureCallInjectionインジェクションの詳細
+
+### 非同期プロシージャ呼び出し(APC)とは
+APC は、指定されたスレッドが次に非アラート状態からアラート可能状態に切り替わったときに、指定されたコードを実行するメカニズムです。
